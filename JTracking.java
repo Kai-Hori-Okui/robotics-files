@@ -131,7 +131,7 @@ public class JTracking {
         return ((angle + 180.0) % 360.0) - 180.0;
     }
 
-    public constrainPower(double min, double max, double power) {
+    public double constrainPower(double min, double max, double power) {
         double absPower = Math.abs(power);
         double sign = Math.signum(power);
 
